@@ -7,7 +7,6 @@
     <mat-card-content>
       <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
 
-        <!-- Full Name -->
         <mat-form-field appearance="outline" class="full-width">
           <mat-label>Full Name</mat-label>
           <input matInput formControlName="fullName" placeholder="Enter your full name" />
@@ -19,7 +18,6 @@
           </mat-error>
         </mat-form-field>
 
-        <!-- Email -->
         <mat-form-field appearance="outline" class="full-width">
           <mat-label>Email</mat-label>
           <input matInput type="email" formControlName="email" placeholder="Enter your email" />
@@ -31,7 +29,6 @@
           </mat-error>
         </mat-form-field>
 
-        <!-- Age -->
         <mat-form-field appearance="outline" class="full-width">
           <mat-label>Age</mat-label>
           <input matInput type="number" formControlName="age" placeholder="Enter your age" />
@@ -46,7 +43,6 @@
           </mat-error>
         </mat-form-field>
 
-        <!-- Years of Experience -->
         <mat-form-field appearance="outline" class="full-width">
           <mat-label>Years of Experience</mat-label>
           <input matInput type="number" formControlName="yearsOfExperience"
@@ -62,7 +58,6 @@
           </mat-error>
         </mat-form-field>
 
-        <!-- Skills Dropdown -->
         <mat-form-field appearance="outline" class="full-width">
           <mat-label>Skills</mat-label>
           <mat-select formControlName="skills" multiple placeholder="Select your skills">
@@ -75,7 +70,6 @@
           </mat-error>
         </mat-form-field>
 
-        <!-- Success Message -->
         <div class="success-message" *ngIf="submitSuccess">
           ✅ Registration submitted successfully!
         </div>

@@ -47,7 +47,6 @@ export class DashboardComponent {
     });
   }
 
-  // helper to easily access form fields in the HTML
   get f() {
     return this.registrationForm.controls;
   }
